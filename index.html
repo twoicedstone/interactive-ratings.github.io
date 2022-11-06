@@ -176,29 +176,27 @@
   </div>
 </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/twoicedstone">Innocent Okafor</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="https://www.frontendmentor.io/profile/twoicedstone">Innocent Okafor</a>
   </div>
-
-  <script>
-    const mainContainer = document.querySelector('.top');
-    const thanksContainer = document.querySelector('.thank-you');
-    const submitButton = document.getElementById("submit");
-    const rating = document.getElementById("rating-number");
-    const rates = document.querySelectorAll(".rates");
-
-    submitButton.addEventListener("click", () => {
-      thanksContainer.classList.remove('hidden')
-      mainContainer.style.display = "none"
-    })
-
-    rates.forEach((rate) => {
-      rate.addEventListener("click", () => {
-        rating.innerHTML = rate.innerHTML
-      })
-    })
-    
-  </script>
 </main>
+<script>
+  const mainContainer = document.querySelector('.top');
+  const thanksContainer = document.querySelector('.thank-you');
+  const submitButton = document.getElementById("submit");
+  const rating = document.getElementById("rating-number");
+  const rates = document.querySelectorAll(".rates");
+
+  submitButton.addEventListener("click", () => {
+    thanksContainer.classList.remove('hidden')
+    mainContainer.style.display = "none"
+  });
+
+  rates.forEach((rate) => {
+    rate.addEventListener("click", () => {
+      rating.innerHTML = rate.innerHTML
+    });
+  });
+</script>
 </body>
 </html>
